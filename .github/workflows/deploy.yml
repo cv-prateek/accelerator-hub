@@ -17,8 +17,6 @@ jobs:
           git config --global user.name "example"
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Clean build
-        run: npm run clean
       - name: Install dependencies
         run: |
           npm install
