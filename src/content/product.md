@@ -22,7 +22,6 @@ products:
       - "Simulated data for various scenarios"
       - "Data anonymization for privacy"
     imgSrc: "../images/Data_Generator.png"
-    link: "https://data-quality-ui-le4rfpdzmq-uc.a.run.app/"
 
   - product: "Minimal ETL"
     tags: "Web App"
@@ -32,7 +31,6 @@ products:
       - "Automated data pipelines"
       - "Support for multiple data sources"
     imgSrc: "../images/ETL.png"
-    link: "https://data-quality-ui-le4rfpdzmq-uc.a.run.app/"
 
   - product: "Restonomer"
     tags: "SBT"
@@ -42,7 +40,6 @@ products:
       - "Integrated development environment"
       - "Accelerated product development cycles"
     imgSrc: "../images/Restonomer.png"
-    learnMore: ""
     link: "https://teamclairvoyant.github.io/restonomer/"
 
   - product: "Data Dictionary Builder"
@@ -53,7 +50,6 @@ products:
       - "Collaborative dictionary curation"
       - "Enhanced data literacy across the organization"
     imgSrc: "../images/Data_Dictionary.png"
-    link: "https://data-quality-ui-le4rfpdzmq-uc.a.run.app/"
 
   - product: "MLOps Template"
     tags: "Web App"
@@ -64,4 +60,14 @@ products:
       - "Monitoring and management of ML lifecycle"
     imgSrc: "../images/Machine_Learning.png"
     link: "https://data-quality-ui-le4rfpdzmq-uc.a.run.app/"
+
+  - product: "Big Query Cost Optimizer"
+    tags: "BigQuery"
+    summary: "Enhance BigQuery efficiency in GCP with our tool that identifies costly queries, aiding in cost reduction and performance improvement at all organizational levels. Proven to save time and resources, it's an essential solution for optimized query management."
+    additionalFeatures: 
+      - "Cost Optimization Alerts"
+      - "Performance Analytics"
+      - "Real-Time Query Monitoring"
+    learnMore: "https://clairvoyant.atlassian.net/wiki/spaces/~5e57725da17f930c9b95e4ae/pages/2991882261/GCP+POC+group+Identify+Expensive+BigQuery"
+    imgSrc: "../images/identify_expensive_bigquery.png"
 ---
