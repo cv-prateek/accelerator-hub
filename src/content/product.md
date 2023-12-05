@@ -22,6 +22,7 @@ products:
       - "Simulated data for various scenarios"
       - "Data anonymization for privacy"
     imgSrc: "../images/Data_Generator.png"
+    link: "https://data-quality-ui-le4rfpdzmq-uc.a.run.app/"
 
   - product: "Minimal ETL"
     tags: "Web App"
@@ -31,6 +32,7 @@ products:
       - "Automated data pipelines"
       - "Support for multiple data sources"
     imgSrc: "../images/ETL.png"
+    link: "https://data-quality-ui-le4rfpdzmq-uc.a.run.app/"
 
   - product: "Restonomer"
     tags: "SBT"
@@ -51,6 +53,7 @@ products:
       - "Collaborative dictionary curation"
       - "Enhanced data literacy across the organization"
     imgSrc: "../images/Data_Dictionary.png"
+    link: "https://data-quality-ui-le4rfpdzmq-uc.a.run.app/"
 
   - product: "MLOps Template"
     tags: "Web App"
@@ -60,4 +63,5 @@ products:
       - "Automated machine learning workflows"
       - "Monitoring and management of ML lifecycle"
     imgSrc: "../images/Machine_Learning.png"
+    link: "https://data-quality-ui-le4rfpdzmq-uc.a.run.app/"
 ---

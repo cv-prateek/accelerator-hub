@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const ProductCard = ({ title, text, imgSrc, reverse = false, tags = "", link }) => {
+const ProductCard = ({ title, text, imgSrc, reverse = false, tags = "", link = "" }) => {
     const featuredImg = imgSrc?.childImageSharp?.gatsbyImageData;
     return <div className={`p-4 flex gap-8 rounded-3xl ${reverse ? "flex-row-reverse" : "flex-row"} mx-8`}>
         <div className="w-6/12 flex justify-center align-middle items-center">
