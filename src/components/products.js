@@ -2,7 +2,8 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const ProductCard = ({ title, text, imgSrc, reverse = false, tags = "", link = "" }) => {
+const ProductCard = ({ title, text, imgSrc, reverse = false, tags = "", link = "", learnMore= "" }) => {
+    console.log(learnMore)
     const featuredImg = imgSrc?.childImageSharp?.gatsbyImageData;
     return <div className={`p-4 flex gap-8 rounded-3xl ${reverse ? "flex-row-reverse" : "flex-row"} mx-8`}>
         <div className="w-6/12 flex justify-center align-middle items-center">
@@ -20,9 +21,9 @@ const ProductCard = ({ title, text, imgSrc, reverse = false, tags = "", link = "
             <h3 className="text-4xl leading-tight font-bold mb-8 text-primary">{title}</h3>
             <p className="text-xl text-left mb-12">{text}</p>
             <div class="flex flex-row gap-2">
-                <button className="bg-secondary text-white px-4 py-2 rounded max-w-fit hover:bg-dark hover:text-white transition-colors">
+               {learnMore && <button className="bg-secondary text-white px-4 py-2 rounded max-w-fit hover:bg-dark hover:text-white transition-colors" target="_blank" onClick={() => window.open(learnMore)}>
                     Learn more
-                </button>
+                </button>}
                 {link && <button className="text-dark px-4 py-2 rounded max-w-fit hover:bg-dark hover:text-white transition-colors" target="_blank" onClick={() => window.open(link)}>
                     Try it out
                 </button>}
@@ -76,6 +77,7 @@ const Products = () => {
                             imgSrc={feature?.imgSrc || ""}
                             tags={feature?.tags}
                             link={feature?.link}
+                            learnMore={feature?.learnMore}
                         />
                     ))}
                 </div>
