@@ -2,6 +2,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/accelerator-hub",
   siteMetadata: {
     title: `Accelerator Hub`,
     description: 'A toolkit for Data Engineering Tasks',
