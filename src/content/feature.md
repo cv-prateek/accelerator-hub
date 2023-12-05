@@ -3,18 +3,21 @@ id: "features"
 title: "Accelerator Hub Sales Pitch"
 sections:
   - title: "Our Strengths"
+    imgSrc: "../images/ai_innovation.png"
     items:
       - "Extensive Experience & People"
       - "Partnerships"
       - "Deliveries to clients and testimonials"
       - "Technical Capabilities"
   - title: "Our Offerings"
+    imgSrc: "../images/center_of_excellance.png"
     items:
       - "Empower your business"
       - "Data-driven insights"
       - "Increased productivity"
       - "Cost savings"
   - title: "Proof of Expertise"
+    imgSrc: "../images/capabilities.png"
     items:
       - "Partnership certificates"
       - "Technical certifications"

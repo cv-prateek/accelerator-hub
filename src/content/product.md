@@ -1,7 +1,7 @@
 ---
 id: "products"
 banner: "Streamline Your Workflow"
-title: "Accelerator Hub Products"
+title: "Accelerator Hub Tools"
 subtitle: "Explore our suite of innovative tools designed to refine, manage, and leverage your data landscape"
 products:
   - product: "Data Quality Framework"
@@ -12,6 +12,7 @@ products:
       - "Real-time data validation"
       - "Compliance with data governance"
     imgSrc: "../images/data_quality.png"
+    link: "https://data-quality-ui-le4rfpdzmq-uc.a.run.app/"
 
   - product: "Data Generator"
     tags: "Web App"
@@ -32,13 +33,15 @@ products:
     imgSrc: "../images/ETL.png"
 
   - product: "Restonomer"
-    tags: "Web App"
-    summary: "Addresses inconsistent expertise by offering a user-friendly platform to accelerate development with thorough concept implementation and technology integration."
+    tags: "SBT"
+    summary: "Addresses the complexities of fetching large datasets from REST APIs with tailored authentication, precise data fetching, and efficient, scalable processing. It transforms and stores diverse data formats seamlessly, ensuring robust and concurrent data handling."
     additionalFeatures:
       - "Expert system recommendations"
       - "Integrated development environment"
       - "Accelerated product development cycles"
     imgSrc: "../images/Restonomer.png"
+    learnMore: ""
+    link: "https://teamclairvoyant.github.io/restonomer/"
 
   - product: "Data Dictionary Builder"
     tags: "Web App"
