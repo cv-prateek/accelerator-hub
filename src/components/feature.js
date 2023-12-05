@@ -1,5 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Features = () => {
     const data = useStaticQuery(graphql`
@@ -10,6 +11,11 @@ const Features = () => {
             sections {
               title
               items
+              imgSrc {
+                childImageSharp {
+                    gatsbyImageData(width: 200)
+                }
+              }
             }
           }
         }
@@ -19,25 +25,25 @@ const Features = () => {
     const { title, sections } = data.markdownRemark.frontmatter;
 
     return (
-        <div class="p-16">
-            <div class="relative isolate pt-8 text-center">
-                <h2 class="text-4xl tracking-tight text-gray-900">{title}</h2>
-                <div class="flex justify-center items-center space-x-24 my-12">
-                    {sections.map((section) => {
-                        return <div class="w-3/12 p-2 bg-transparent text-center">
-                            <h5 class="text-2xl p-4 font-bold tracking-tight text-gray-900">{section.title}</h5>
-                            <ul>
-                                {section.items.map((item) => <li><p class="mt-0 text-lg leading-8 text-gray-600">{item}</p></li>)}
-                            </ul>
-                            <a href="#" class="inline-flex items-center px-3 py-2 my-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                Read more
-                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
+        <div id="features" class="relative isolate text-center">
+            <h2 class="text-4xl font-bold tracking-tight text-dark mb-4 py-10">{title}</h2>
+            <div class="flex px-32 py-12 justify-around gap-12">
+                {sections.map((section, index) => {
+                    const imgSrc = section.imgSrc?.childImageSharp?.gatsbyImageData;
+                    return <div
+                        class={`w-4/12 p-2 pb-12 bg-transparent flex flex-col justify-center items-center hover:shadow-md transition ease-in-out hover:translate-y-2`}>
+                        <div className="w-6/12 flex justify-center align-middle items-center p-2">
+                            <GatsbyImage class="w-12 object-fill " image={imgSrc} alt="our Strength" />
                         </div>
-                    })}
-                </div>
+                        <h5 class="text-2xl p-4 font-bold tracking-tight text-primary">{section.title}</h5>
+                        <ul>
+                            {section.items.map((item) => <li><p class="mt-0 text-lg leading-8 text-secondary-600">{item}</p></li>)}
+                        </ul>
+                        <a href="#" class="inline-flex items-center px-3 py-2 my-4 text-sm font-medium text-center underline focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Read more
+                        </a>
+                    </div>
+                })}
             </div>
         </div>
     )
