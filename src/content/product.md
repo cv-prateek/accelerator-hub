@@ -1,7 +1,7 @@
 ---
 id: "products"
-banner: "Lorem ipsum"
-title: "Streamline Your Workflow"
+banner: "Streamline Your Workflow"
+title: "Accelerator Hub Products"
 subtitle: "Explore our suite of innovative tools designed to refine, manage, and leverage your data landscape"
 products:
   - product: "Data Quality Framework"
