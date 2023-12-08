@@ -12,7 +12,7 @@ products:
       - "Real-time data validation"
       - "Compliance with data governance"
     imgSrc: "../images/data_quality.png"
-    link: "https://data-quality-ui-le4rfpdzmq-uc.a.run.app/"
+    link: "https://data-quality-ui-jhlorr2rlq-uc.a.run.app"
 
   - product: "Data Generator"
     tags: "Web App"
